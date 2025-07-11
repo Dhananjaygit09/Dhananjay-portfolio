@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Neon Effect</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 60px;
+      font-family: 'Arial', sans-serif;
+      animation: neonBlink 2s infinite, colorChange 5s infinite;
+      text-shadow: 0 0 10px #0ff,
+                   0 0 20px #0ff,
+                   0 0 30px #0ff,
+                   0 0 40px #0ff;
+    }
+
+    @keyframes neonBlink {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #0ff; /* Cyan */
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      }
+      25% {
+        color: #f0f; /* Magenta */
+        text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
+      }
+      50% {
+        color: #ff0; /* Yellow */
+        text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
+      }
+      75% {
+        color: #0f0; /* Green */
+        text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+      }
+      100% {
+        color: #0ff; /* Back to Cyan */
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Dhananjay</h1>
+</body>
+</html>
