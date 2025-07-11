@@ -2,60 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Neon Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhananjay Ghongade - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
     body {
-      background-color: black;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4ff, #e6ecff);
+      color: #222;
+      padding: 30px;
+      scroll-behavior: smooth;
+      user-select: none;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .top-header {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      height: 100vh;
+    }
+
+    .photo-container {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid #fff;
+      box-shadow: 0 0 10px 3px rgba(0, 183, 255, 0.6);
+      animation: glow 2s infinite alternate;
+      background: #fff;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(1px);
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px 3px rgba(0, 183, 255, 0.4);
+      }
+      100% {
+        box-shadow: 0 0 20px 6px rgba(0, 183, 255, 0.9);
+      }
     }
 
     h1 {
-      font-size: 60px;
-      font-family: 'Arial', sans-serif;
-      animation: neonBlink 2s infinite, colorChange 5s infinite;
-      text-shadow: 0 0 10px #0ff,
-                   0 0 20px #0ff,
-                   0 0 30px #0ff,
-                   0 0 40px #0ff;
+      font-size: 28px;
+      margin-bottom: 5px;
+      color: #003366;
     }
 
-    @keyframes neonBlink {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.5;
-      }
+    .contact {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #333;
     }
 
-    @keyframes colorChange {
-      0% {
-        color: #0ff; /* Cyan */
-        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
-      }
-      25% {
-        color: #f0f; /* Magenta */
-        text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
-      }
-      50% {
-        color: #ff0; /* Yellow */
-        text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0;
-      }
-      75% {
-        color: #0f0; /* Green */
-        text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
-      }
-      100% {
-        color: #0ff; /* Back to Cyan */
-        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
-      }
+    h2 {
+      color: #0055cc;
+      margin-top: 30px;
+      border-bottom: 2px solid #0055cc;
+      padding-bottom: 4px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    ::selection {
+      background: transparent;
     }
   </style>
 </head>
 <body>
-  <h1>Dhananjay</h1>
+  <div class="container">
+    <div class="top-header">
+      <div>
+        <h1>Dhananjay Ghongade</h1>
+        <div class="contact">📞 8928561877 &nbsp;&nbsp;&nbsp; 📧 dhananjayghongade6789@gmail.com</div>
+      </div>
+      <div class="photo-container">
+        <img src="images/dhananjay.png" alt="Dhananjay Ghongade" />
+      </div>
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p>Highly motivated and results-driven Azure Administrator with 3 years of experience in managing and deploying cloud infrastructure solutions on Microsoft Azure. Proven expertise in implementing, monitoring, and maintaining Azure services, automating processes, and ensuring system security and compliance. Adept at working with cross-functional teams, troubleshooting complex issues, and delivering high-quality results on time.</p>
+
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Cloud Services:</strong> Azure Entra ID, Azure AD, Azure Virtual Machines, Azure Storage, Azure patching, Cost Management, Azure Virtual Desktop, Backup and Recovery Services.</li>
+      <li><strong>Networking:</strong> Azure Virtual Networks (VNet), Load Balancer, NSGs, VPN Gateway, ExpressRoute</li>
+      <li><strong>Security & Identity:</strong> Role-Based Access Control (RBAC), Azure Security Center, MFA, NSGs, Azure AD</li>
+      <li><strong>Automation & Scripting:</strong> Teraform</li>
+      <li><strong>Monitoring & Management:</strong> Amuraa Monitor, Zabbix Monitoring, Log Analytics, Azure Backup, Azure Site Recovery, Azure Subscription, Manage Licence, Data Protection, Data Recovery, Group Management</li>
+      <li><strong>Tools & Services:</strong> Azure Key Vault, Azure Policy, ARM Templates, Azure Cost Management</li>
+      <li><strong>Operating Systems:</strong> Windows Server, Linux</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Certified: Azure Administrator Associate (AZ-104) – [April - 2024]</li>
+      <li>CDAC - PG(DITISS) – [2022]</li>
+      <li>Sciencelogic SL1 – [2024]</li>
+    </ul>
+
+    <h2>Professional Experience</h2>
+    <p><strong>Designation:</strong> Associate Consultant<br/>
+    <strong>Role:</strong> Azure Administrator<br/>
+    <strong>Company:</strong> Yash Technology – Pune (Hinjewadi)<br/>
+    <strong>Duration:</strong> June 2022 - Present</p>
+    <ul>
+      <li>Contributed to Azure AD environment by managing users, groups, and MFA.</li>
+      <li>Creating and managing different types of Azure storage accounts (Blob Storage, File Storage, etc.).</li>
+      <li>Ensuring storage data is backed up and replicated for high availability and redundancy.</li>
+      <li>Managed and deployed Azure Virtual Machines, ensuring efficient scaling and availability based on workload requirements.</li>
+      <li>Configured and maintained Azure Networking solutions including VNets, NSGs, VPN Gateway, and Load Balancer to provide secure and reliable network connectivity.</li>
+      <li>Administered Azure Active Directory (Azure AD) for user identity and access management, leveraging RBAC for role-based access control.</li>
+      <li>Monitored Azure resources using Azure Monitor and Log Analytics, created custom alerts, and resolved critical issues.</li>
+      <li>Implemented Azure Backup and Azure Site Recovery for Disaster recovery and data protection solutions.</li>
+      <li>Managed resource utilization and costs using Azure Cost Management, delivering cost-effective solutions to meet business needs.</li>
+      <li>Assisted in the deployment and configuration of Azure Virtual Machines and managed day-to-day operations of cloud resources.</li>
+      <li>Supported the setup of Azure Networking including DNS, VNet Peering, and Network Security Groups (NSG).</li>
+      <li>Used ARM Templates to automate resource provisioning and deployment.</li>
+      <li>Assisted in the monitoring and troubleshooting of systems through Zabbix Monitoring Tool.</li>
+      <li>Snapshot Management: Creating and managing storage snapshots to provide a point-in-time backup of data.</li>
+      <li>Participated in team-based efforts for security and compliance audits to meet regulatory requirements and best practices.</li>
+      <li>Provided L1 level support to resolve issues related to Azure resources, connectivity, and performance.</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <p><strong>Project Name:</strong> Dormakaba</p>
+    <ul>
+      <li>Create, Modify, and Delete User Accounts: Managing users and their access to resources within the Azure environment.</li>
+      <li>Identity federation integrating on-premises Active Directory with Azure AD, using Azure AD Connect to sync identities across hybrid environments.</li>
+      <li>Proficiency in user and group management, RBAC, and Conditional Access policies.</li>
+      <li>Understanding of Multi-Factor Authentication (MFA) and its integration in a cloud environment.</li>
+      <li>Expertise in managing different types of Azure Storage (Blob, File, Queue, Table).</li>
+      <li>Understanding access control methods like RBAC, SAS tokens, and Azure AD authentication for secure data access.</li>
+      <li>Knowledge of storage replication, backup, and disaster recovery options.</li>
+      <li>Password Management: Enforcing password policies, self-service password resets, and conditional access policies.</li>
+      <li>Managed Azure Patch Management, ensuring timely updates and compliance of virtual machines and applications.</li>
+      <li>Performed regular backup operations for Azure VMs and databases to ensure data integrity and availability.</li>
+      <li>Assisted in managing Azure applications by deploying, configuring, and monitoring their performance.</li>
+      <li>Implemented and configured Zabbix monitoring for monitoring servers, network devices, and applications, ensuring 24/7 system availability and performance.</li>
+      <li>Monitored system performance (e.g., CPU, memory, disk space) and network traffic to identify anomalies, proactively addressing potential issues before they impact users.</li>
+      <li>Continuously monitor infrastructure (servers, networks, databases) to ensure optimal performance and uptime.</li>
+      <li>Track system metrics (CPU usage, memory, disk space, and network traffic) and take corrective actions as needed.</li>
+      <li>Stay updated on the latest features of monitoring tools and ensure they are optimized for the organization’s needs.</li>
+      <li>Created internal and external user accounts by provisioning access and assigning appropriate roles and licenses.</li>
+      <li>Managed user termination processes, ensuring smooth deactivation of accounts and revocation of access rights.</li>
+      <li>Assigned E1 and E2 licenses to users based on their roles and organizational requirements.</li>
+      <li>Created email IDs for external users, ensuring proper configuration for secure communication.</li>
+      <li>Performed user ID modifications and changes as per user requests and organizational policies.</li>
+      <li>Added users to appropriate VPN groups for secure remote access.</li>
+      <li>Generated and maintained monthly audit reports to review user access, compliance, and security measures.</li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li>CDAC – PG - DITISS, Bengaluru – April 2022</li>
+      <li>B.E. in Electronics and Telecommunication, VIT Mumbai – April 2021 (CGPA: 8.01)</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <ul>
+      <li>English</li>
+      <li>Hindi</li>
+      <li>Marathi</li>
+    </ul>
+  </div>
 </body>
 </html>
